@@ -10,16 +10,35 @@
 
 <body>
     <div class="container">
-        <div class="book-list">
-            <h2>Book List</h2>
+        <div class="book-1">
+            <img src="https://placehold.co/100x100" alt="Book 1">
+            <h2>Book Title</h2>
+            <p>Author Name</p>
+            <p>Pages 1</p>
+            <p>Read 1</p>
         </div>
         <div class="book-form">
             <h2>Add Book</h2>
+            <input type="text" id="title" placeholder="Title">
+            <input type="text" id="author" placeholder="Author">
+            <input type="number" id="pages" placeholder="Pages">
+            <input type="checkbox" id="read"> Read
+            <button class="new-book-btn">Add Book</button>
         </div>
     </div>
-    <button class="add-book-btn">Add Book</button>
     <div class="header">
         <h1>My personal Library</h1>
+    </div>
+    <div class="modal" id="bookModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Add Book</h2>
+            <input type="text" id="modal-title" placeholder="Title">
+            <input type="text" id="modal-author" placeholder="Author">
+            <input type="number" id="modal-pages" placeholder="Pages">
+            <input type="checkbox" id="modal-read"> Read
+            <button class="add-book-btn">Add Book</button>
+        </div>
     </div>
 </body>
 <script src="script.js"></script>
