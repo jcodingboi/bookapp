@@ -14,18 +14,18 @@ function addBookToLibrary(book) {
 }
 
 function displayBooks() {
-  const container = document.querySelector('.container');
-  container.innerHTML = ''; // Clear existing books
+  const booksContainer = document.querySelector('.books-container');
+  booksContainer.innerHTML = ''; // Clear existing books
   myLibrary.forEach(book => {
     const bookDiv = document.createElement('div');
-    bookDiv.classList.add('book-1');
+    bookDiv.classList.add('book');
     bookDiv.innerHTML = `
       <h2>${book.title}</h2>
       <p>${book.author}</p>
       <p>Pages: ${book.pages}</p>
       <p>Read: ${book.read ? 'Yes' : 'No'}</p>
     `;
-    container.appendChild(bookDiv);
+    booksContainer.appendChild(bookDiv);
   });
 }
 
